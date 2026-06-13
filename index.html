@@ -2,94 +2,156 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Extract Date from URL - Python Regex</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kommodo Resources</title>
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f2f2f2;
+        * {
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
         }
-        h1, h2 {
+
+        body {
+            background: #f4f6f9;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h1 {
             text-align: center;
             color: #333;
+            margin-bottom: 40px;
         }
-        .box {
-            max-width: 900px;
-            margin: auto;
-            background: #fff;
-            padding: 20px;
+
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+        }
+
+        .card h2 {
+            color: #444;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
             border-radius: 8px;
+            transition: 0.3s;
         }
-        pre {
-            background: #1e1e1e;
-            color: #e6e6e6;
-            padding: 15px;
-            border-radius: 6px;
-            overflow-x: auto;
-            font-size: 14px;
+
+        .btn:hover {
+            background: #0056d2;
         }
-        ul {
-            font-size: 16px;
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #666;
         }
     </style>
 </head>
 
 <body>
 
-<h1>🐍 Extract Date from URL</h1>
-<h2>Python Program using Regular Expressions</h2>
+<div class="container">
 
-<div class="box">
+    <h1>Kommodo Resources</h1>
 
-<h3>📌 Objective</h3>
-<p>
-To extract <b>Year, Month, and Day</b> from a URL using Python Regular Expressions.
-</p>
+    <div class="links-grid">
 
-<h3>📚 Concepts Used</h3>
-<ul>
-    <li>Python <b>re</b> module</li>
-    <li>Regular Expressions</li>
-    <li>Pattern matching</li>
-</ul>
+        <div class="card">
+            <h2>Resource 1</h2>
+            <a class="btn" href="https://kommodo.ai/i/I7hWgVKJaBQOirPlzyjl" target="_blank">
+                Open Link
+            </a>
+        </div>
 
-<h3>💻 Python Program</h3>
+        <div class="card">
+            <h2>Resource 2</h2>
+            <a class="btn" href="https://kommodo.ai/i/6kKMOTX7txOdSw5czYoN" target="_blank">
+                Open Link
+            </a>
+        </div>
 
-<pre>
-import re
+        <div class="card">
+            <h2>Resource 3</h2>
+            <a class="btn" href="https://kommodo.ai/i/gTbV85zphGSeeL7CpIvU" target="_blank">
+                Open Link
+            </a>
+        </div>
 
-def extract_date_from_url(url):
-    # Regex to match YYYY/MM/DD or YYYY-MM-DD patterns
-    match = re.search(r'(\\d{4})[/-](\\d{2})[/-](\\d{2})', url)
-    if match:
-        year, month, day = match.groups()
-        return year, month, day
-    else:
-        return None
+        <div class="card">
+            <h2>Resource 4</h2>
+            <a class="btn" href="https://kommodo.ai/i/AECYM1SljBB4RvXdZE3a" target="_blank">
+                Open Link
+            </a>
+        </div>
 
+        <div class="card">
+            <h2>Resource 5</h2>
+            <a class="btn" href="https://kommodo.ai/i/qkw8nsk66lvqsbZyzuEx" target="_blank">
+                Open Link
+            </a>
+        </div>
 
-# Example usage
-url = "https://example.com/news/2025/09/18/article-title"
+        <div class="card">
+            <h2>Resource 6</h2>
+            <a class="btn" href="https://kommodo.ai/i/mnEUY1TPdODtVYIMxDqq" target="_blank">
+                Open Link
+            </a>
+        </div>
 
-result = extract_date_from_url(url)
+        <div class="card">
+            <h2>Resource 7</h2>
+            <a class="btn" href="https://kommodo.ai/i/t5W1KuJTKLk1KdhKI6dB" target="_blank">
+                Open Link
+            </a>
+        </div>
 
-if result:
-    print("Year:", result[0])
-    print("Month:", result[1])
-    print("Day:", result[2])
-else:
-    print("No date found in URL.")
-</pre>
+        <div class="card">
+            <h2>Resource 8</h2>
+            <a class="btn" href="https://kommodo.ai/i/Jw8F7AJsu9Mh2p0H2Zo8" target="_blank">
+                Open Link
+            </a>
+        </div>
 
-<h3>✅ Output</h3>
-<pre>
-Year: 2025
-Month: 09
-Day: 18
-</pre>
+        <div class="card">
+            <h2>Resource 9</h2>
+            <a class="btn" href="https://kommodo.ai/i/1STAj4sOzoT5PonJBvNy" target="_blank">
+                Open Link
+            </a>
+        </div>
+
+    </div>
+
+    <footer>
+        © 2026 Kommodo Resources Portal
+    </footer>
 
 </div>
 
